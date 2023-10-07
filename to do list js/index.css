@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    background: linear-gradient(135deg, purple, pink);
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5954;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 14px;
+    padding: 12px 8px 15px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 29px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(https://th.bing.com/th/id/R.f44e5e1dad51bd04670df23877a316dd?rik=tc8SykPwduODDQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_87204.png&ehk=qBGJT0sPunbIwCoALgdBh%2bH%2f7Sjv7jJGZ0TmEAWFxQU%3d&risl=&pid=ImgRaw&r=0);
+
+    background-size: cover;
+    background-position: center;
+    top: 7px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+
+    background-image: url(https://th.bing.com/th/id/R.bd5b6ded98bf8d3041dbb1b31a26d348?rik=pMg6e%2baSntFT9Q&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f7%2fCheck-PNG-Free-Download.png&ehk=5RU3FKn7Fge0GVpwUBn%2f3gV%2bpZdjn%2bTP05cJpbclC%2b0%3d&risl=&pid=ImgRaw&r=0);
+    border-radius: 50%;
+    height: 20px;
+}
+
+ul li span {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    line-height: 40px;
+    color: #555;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
